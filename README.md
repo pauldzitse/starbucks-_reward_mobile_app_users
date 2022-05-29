@@ -5,8 +5,9 @@ The results of this analysis were selected for publication at the Startup-Medium
 <li><a href="#dataoverview">2. Dataset Overview
 <li><a href="#description">3. Steps
 <li><a href="#results">4. Models selection and fine tunning 
-<li><a href="#features">5. Features importance 
-<li><a href="#acknowledge">6. Acknowledgement
+<li><a href="#features">5. Features Importance 
+<li><a href="#graphical">6. Graphical Abstract  
+<li><a href="#acknowledge">7. Acknowledgement
   
 <a id='intro'></a>
 ## 1. Project Overview
@@ -54,33 +55,36 @@ transcript.json
 
 1. Access, Clean and Analyse Data
   
-   First I access, clean and analyse the three datasets.
+   To begin, access, clean and analyse the three datasets to get an understanding of their structure.
   
 2. Data Visualisation 
   
-   Then I visualize the data to understand relationship between the variables.
+   Then i visualize the data to understand relationship between the variables.
   
 3. Data Construction
   
-   The clean data is constructed for the analysis. It involves the combination the four datasets, portfolio, profile, transaction and offer data. It contain all users that we sent offers and have received and viewed it. Since the new dataset is unbalanced, I treated it as binary classification problem, with majority class: offer unsuccessful (0) and minority class: offer successful (1)
-  
+   The clean data is constructed for the analysis. It involves combination of four datasets, **portfolio**, **profile**, **transaction** and **offer data**. The new dataset contains all users that were sent offers and have received and viewed them. Since the new dataset is unbalanced, I treated it as binary classification problem, with **majority class: offer unsuccessful (0)** and **minority class: offer successful (1)**. Given this, the focus it on the minority model.
+   
 <a id="results"></a>
 ## 4. Models selection and fine tunning 
   
-  I then select the following models
-  
+  These models were initially selected and train to test and evaluate based on **threshold**, **ranking** and **probability** metrics, in addition to using **bootstrap resampling** methods.
 -	Logistic Regression
 -	Random Forest: ensemble bagging classifier
 -	K-Nearest Neighbours: instance based classifier
 -	Gaussian Naive Bayes: probabilistic classifier
 -	XGBoost: ensemble (extreme!) boosting classifier
-  
-The focus is on the minority class. I build and train the five models to determine which is most appropriate for dataset. I select XGBoost: ensemble (extreme!) boosting classifier best model based on scores obtained from Threshold, Ranking and Probability Metrics, in addition to using bootstrap resampling methods. 
-The parameters of XGB are fine tuned by using Grid Search algorithm. The metrics precision, recall, f1-score, log loss and classification error improved. 
-  
+ I select XGBoost: ensemble (extreme!) boosting classifier for the final analysis.  Its parameters are fine-tuned by using Grid Search algorithm. Evaluation metrics like **precision**, **recall**, **f1-score**, **log loss** and **classification error** improved against initial scores. 
+
 <a id="features"></a>
 ## 5. Features importance 
-The Selected model is trained and tested, and variable importance is obtained with the help of SHAP value tools. 
+  First the model is created with the optimal parameters. Then it is passed into **SHAP Explainer function** to create an explainer objects and then use to calculate the SHAP values for each observation. SHAP values are used to explain the predictions of a model.
+  
+  <a id="graphical"></a>
+  ## 6. Graphical Abstracts
+  
+  Some of graphical abstracts can be seen below.
+  <img src="images/abstract.png"> 
   
 <a id="acknowledge"></a>
 ## 6. Acknowledgement
