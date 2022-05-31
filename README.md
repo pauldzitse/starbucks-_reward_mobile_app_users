@@ -5,9 +5,8 @@ The results of this analysis were selected for publication at the Startup-Medium
 <li><a href="#dataoverview">2. Dataset Overview
 <li><a href="#description">3. Steps
 <li><a href="#results">4. Important Folders and Files
-<li><a href="#features">5.  Dependencies 
-<li><a href="#graphical">6. Graphical Abstract  
-<li><a href="#acknowledge">7. Acknowledgement
+<li><a href="#graphical">5. Graphical Abstract  
+<li><a href="#acknowledge">6. Acknowledgement
   
 <a id='intro'></a>
 ## 1. Project Overview
@@ -96,24 +95,14 @@ transcript.json
  - starbucks-reward_mobile_app_users.ipynb (Main Jupyter notebook for the project)
  - starbucks-reward_mobile_app_users.html (HTML version of the main Jupyter notebook)
  
-<a id="features"></a>
-## 6. To start    
-### Dependencies
- 
- - [Pandas](https://pandas.pydata.org/)
- - [Plotly](https://plotly.com/python/)
- - [Progressbar](https://tqdm.github.io/)
- - [Numpy](https://numpy.org/)
- - [Seaborn](https://seaborn.pydata.org/)
- - [Sklearn](https://scikit-learn.org/stable/)
- 
+
   <a id="graphical"></a>
-  ## 7. Graphical Abstracts
+  ## 5. Graphical Abstracts
   
   Some of graphical abstracts can be seen below.
   <img src="images/abstract.png"> 
   
 <a id="acknowledge"></a>
-## 8. Acknowledgement
+## 6. Acknowledgement
   
 Credit must be given to [Stackbruck](https://www.starbucks.com/) for the dataset also to [Udacity](https://www.udacity.com/school-of-data-science) for Data Scientist Nanodegree program. Otherwise feel free to use this code as you would like.
