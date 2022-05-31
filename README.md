@@ -74,7 +74,7 @@ transcript.json
     -	Gaussian Naive Bayes: probabilistic classifier
     -	XGBoost: ensemble (extreme!) boosting classifier
   
-     I select XGBoost the final analysis.  Its parameters are fine-tuned by using Grid Search algorithm. Evaluation metrics like **precision**, **recall**, **f1-score**, **log loss** and **classification error** improved against initial scores. 
+     I select XGBoost for the final analysis.  Its parameters are fine-tuned by using Grid Search algorithm. Evaluation metrics like **precision**, **recall**, **f1-score**, **log loss** and **classification error** improved against initial scores. 
 
 5. Features importance 
   
@@ -105,4 +105,4 @@ transcript.json
 <a id="acknowledge"></a>
 ## 6. Acknowledgement
   
-Credit must be given to [Stackbruck](https://www.starbucks.com/) for the dataset also to [Udacity](https://www.udacity.com/school-of-data-science) for Data Scientist Nanodegree program. Otherwise feel free to use this code as you would like.
+Credit must be given to [Starbucks](https://www.starbucks.com/) for the dataset also to [Udacity](https://www.udacity.com/school-of-data-science) for Data Scientist Nanodegree program. Otherwise feel free to use this code as you would like.
