@@ -5,7 +5,7 @@ The results of this analysis were selected for publication at the Startup-Medium
 <li><a href="#dataoverview">2. Dataset Overview
 <li><a href="#description">3. Steps
 <li><a href="#results">4. Important folders and files
-<li><a href="#features">5. Features Importance 
+<li><a href="#features">5.  Dependencies 
 <li><a href="#graphical">6. Graphical Abstract  
 <li><a href="#acknowledge">7. Acknowledgement
   
@@ -75,7 +75,7 @@ transcript.json
     -	Gaussian Naive Bayes: probabilistic classifier
     -	XGBoost: ensemble (extreme!) boosting classifier
   
-   I select XGBoost the final analysis.  Its parameters are fine-tuned by using Grid Search algorithm. Evaluation metrics like **precision**, **recall**, **f1-score**, **log loss** and **classification error** improved against initial scores. 
+     I select XGBoost the final analysis.  Its parameters are fine-tuned by using Grid Search algorithm. Evaluation metrics like **precision**, **recall**, **f1-score**, **log loss** and **classification error** improved against initial scores. 
 
 5. Features importance 
   
