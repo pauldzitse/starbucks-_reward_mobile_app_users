@@ -4,7 +4,7 @@ The results of this analysis were selected for publication at the Startup-Medium
 <li><a href="#intro">1.	Project Overview
 <li><a href="#dataoverview">2. Dataset Overview
 <li><a href="#description">3. Steps
-<li><a href="#results">4. Important folders and files
+<li><a href="#results">4. Important Folders and Files
 <li><a href="#features">5.  Dependencies 
 <li><a href="#graphical">6. Graphical Abstract  
 <li><a href="#acknowledge">7. Acknowledgement
@@ -92,6 +92,7 @@ transcript.json
   - image
     - abstracts.png
  - Readme.md
+ - LINCENSE
  - starbucks-reward_mobile_app_users.ipynb (Main Jupyter notebook for the project)
  - starbucks-reward_mobile_app_users.html (HTML version of the main Jupyter notebook)
  
