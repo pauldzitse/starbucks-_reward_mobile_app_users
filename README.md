@@ -4,7 +4,7 @@ The results of this analysis were selected for publication at the Startup-Medium
 <li><a href="#intro">1.	Project Overview
 <li><a href="#dataoverview">2. Dataset Overview
 <li><a href="#description">3. Steps
-<li><a href="#results">4. Models selection and fine tunning 
+<li><a href="#results">4. Important folders and files
 <li><a href="#features">5. Features Importance 
 <li><a href="#graphical">6. Graphical Abstract  
 <li><a href="#acknowledge">7. Acknowledgement
@@ -55,7 +55,7 @@ transcript.json
 
 1. Access, Clean and Analyse Data
   
-   To begin, access, clean and analyse the three datasets to get an understanding of their structure.
+   To begin, I access, clean and analyse the three datasets to get an understanding of their structures. Data ranges from 2013 to 2018.
   
 2. Data Visualisation 
   
@@ -63,30 +63,56 @@ transcript.json
   
 3. Data Construction
   
-   The clean data is constructed for the analysis. It involves combination of four datasets, **portfolio**, **profile**, **transaction** and **offer data**. The new dataset contains all users that were sent offers and have received and viewed them. Since the new dataset is unbalanced, I treated it as binary classification problem, with **majority class: offer unsuccessful (0)** and **minority class: offer successful (1)**. Given this, the focus it on the minority model.
+   After i construct a clean data (all users that received an offers and view them) for the analysis by combining four datasets, **portfolio**, **profile**, **transaction** and **offer data**.  The New dataset is unbalanced, so I treated it as binary classification problem, with **majority class: offer unsuccessful (0)** and **minority class: offer successful (1)**. I put focus on analysing the minority class.
    
-<a id="results"></a>
-## 4. Models selection and fine tunning 
+ 4. Models Selection and Fine Tunning 
   
-  These models were initially selected and train to test and evaluate based on **threshold**, **ranking** and **probability** metrics, in addition to using **bootstrap resampling** methods.
--	Logistic Regression
--	Random Forest: ensemble bagging classifier
--	K-Nearest Neighbours: instance based classifier
--	Gaussian Naive Bayes: probabilistic classifier
--	XGBoost: ensemble (extreme!) boosting classifier
- I select XGBoost: ensemble (extreme!) boosting classifier for the final analysis.  Its parameters are fine-tuned by using Grid Search algorithm. Evaluation metrics like **precision**, **recall**, **f1-score**, **log loss** and **classification error** improved against initial scores. 
+    These models were initially selected, trained, tested and evaluation conducted based on **threshold**, **ranking** and **probability** metrics, in addition to using **bootstrap resampling** methods.
+  
+    -	Logistic Regression
+    -	Random Forest: ensemble bagging classifier
+    -	K-Nearest Neighbours: instance based classifier
+    -	Gaussian Naive Bayes: probabilistic classifier
+    -	XGBoost: ensemble (extreme!) boosting classifier
+  
+   I select XGBoost the final analysis.  Its parameters are fine-tuned by using Grid Search algorithm. Evaluation metrics like **precision**, **recall**, **f1-score**, **log loss** and **classification error** improved against initial scores. 
 
-<a id="features"></a>
-## 5. Features importance 
-  First the model is created with the optimal parameters. Then it is passed into **SHAP Explainer function** to create an explainer objects and then use to calculate the SHAP values for each observation. SHAP values are used to explain the predictions of a model.
+5. Features importance 
   
+    First the model is created with the optimal parameters, then passed into **SHAP Explainer function** to create an explainer objects and then use to calculate the SHAP values for each observation. SHAP values are used to explain the predictions of a model.
+  
+ <a id="results"></a>
+ ## 4. Important Folders and Files
+    
+   The project directory takes this form:
+  - data
+    - profile.json  (json-file having data on all articles available to all users)
+    - portfolo.json (json-file having data on portfolios on offer types)
+    - transcript.json (json-file having data on transaction and offer received, viewed and completed)
+  - image
+    - abstracts.png
+ - Readme.md
+ - starbucks-reward_mobile_app_users.ipynb (Main Jupyter notebook for the project)
+ - starbucks-reward_mobile_app_users.html (HTML version of the main Jupyter notebook)
+ 
+<a id="features"></a>
+## 6. To start    
+### Dependencies
+ 
+ - [Pandas](https://pandas.pydata.org/)
+ - [Plotly](https://plotly.com/python/)
+ - [Progressbar](https://tqdm.github.io/)
+ - [Numpy](https://numpy.org/)
+ - [Seaborn](https://seaborn.pydata.org/)
+ - [Sklearn](https://scikit-learn.org/stable/)
+ 
   <a id="graphical"></a>
-  ## 6. Graphical Abstracts
+  ## 7. Graphical Abstracts
   
   Some of graphical abstracts can be seen below.
   <img src="images/abstract.png"> 
   
 <a id="acknowledge"></a>
-## 6. Acknowledgement
+## 8. Acknowledgement
   
 Credit must be given to [Stackbruck](https://www.starbucks.com/) for the dataset also to [Udacity](https://www.udacity.com/school-of-data-science) for Data Scientist Nanodegree program. Otherwise feel free to use this code as you would like.
